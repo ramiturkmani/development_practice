@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Basics</title>
+    <style>
+        tr {
+            /* 
+            => doesn't work for tr
+            border: solid 1px red; 
+            padding: 10px;
+            margin: 10px;
+            */
+            /* background-color: antiquewhite; */
+        }
+
+        table {
+            border: solid 1px;
+            padding: 5px;
+            margin-left: 20px;
+            width: 400px;
+            /* background-color: yellow; */
+            /* border-collapse: collapse; */
+            /* text-indent: 10px; */
+            text-align: center;
+            /* border-spacing has no effect if border-collapse is set to collapse */
+            border-spacing: 20px;
+        }
+
+        th {
+            border: solid 1px;
+            padding: 5px;
+            /* margin: 5px; */
+            /* background-color: aqua; */
+        }
+
+        td {
+            border: solid 1px;
+            padding: 5px;
+            /* margin: 5px; */
+            /* background-color: aquamarine; */
+        }
+        td:first-child {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- thead, tbody, tfoot are all optional elements-->
+    <h1>Tables</h1>
+
+    <table>
+        <!--Header-->
+        <thead>
+            <th>Country</th>
+            <th>Population</th>
+        </thead>
+        <!--Body-->
+        <tbody>
+            <td>USA</td>
+            <td>400,000</td>
+        </tbody>
+        <!--Footer-->
+        <tfoot>
+            <tr>
+                <td>Nigeria</td>
+                <td>40,000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h4>Colspan and horizontal table</h4>
+    <table>
+        <!--Header-->
+        <thead>
+            <th>Country</th>
+            <th colspan="2">Population (min - max)</th>
+        </thead>
+        <!--Body-->
+        <tbody>
+            <td>USA</td>
+            <td>200,000</td>
+            <td>500,000</td>
+        </tbody>
+        <!--Footer-->
+        <tfoot>
+            <tr>
+                <td>Nigeria</td>
+                <td>20,000</td>
+                <td>50,000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h4>Rowspan and vertical table</h4>
+    <table>
+        
+        <thead>
+            <th>Country</th>
+            <td>USA</td>
+            <td>Nigeria</td>
+        </thead>
+       
+        <tbody>
+            <th rowspan="2">Population (min - max)</th>
+            <td>200,000</td>
+            <td>20,000</td>
+            <tr>
+                <td>500,000</td>
+                <td>50,000</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Activity 01</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .inner {
+            flex-direction: column;
+        }
+
+        .container > div {
+            border: solid 1px;
+            padding: 10px;
+            flex: 1;
+        }
+
+        .inner > div {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .box1 {
+            background: red;
+        }
+
+        .box2, .box1a {
+            background-color: green;
+        }
+
+        .box3, .box1b {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>After Flexbox</h1>
+
+    <div class="container">
+        <div class="box1">1
+            <div class="inner">
+            <div class="box1a">1a</div>
+            <div class="box1b">1b</div>
+            </div>
+        </div>
+        
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+</body>
+</html>

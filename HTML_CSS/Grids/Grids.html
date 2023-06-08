@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        .container {
+            border: solid 1px;
+            display: grid;
+            height: 300px;
+            /* These two are the same
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: 150px 150px;
+            grid-template-rows: 100px 100px;
+            margin-bottom: 20px;
+
+            /* grid-column-gap: 10px; */
+            /* grid-row-gap: 10px; */
+            /* row-gap: 10px; */
+            /* gap: 10px; */
+
+            /* justify-items: center; */
+
+            /* align-items: end; */
+
+            /* justify-content: start; */
+
+            /* align-content: space-evenly; */
+        }
+
+        .container > div {
+            border: solid 1px gray;
+            background-color: purple;
+            padding: 10px;
+            color: white;
+            /* width: 100px; */
+        }
+
+        main {
+            display: grid;
+            border: solid 1px;
+            height: 500px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "header header header header"
+            "section section . article"
+            "footer footer footer footer";
+            /* grid-template: 
+            "header header header header" 1fr
+            "section section . article" 1fr
+            "footer footer footer footer" 1fr; */
+
+        }
+
+        header {
+            background-color: orange;
+            grid-area: header;
+        }
+        
+        section {
+            background-color: blue;
+            grid-area: section;
+        }
+
+        article {
+            background-color: green;
+            grid-area: article;
+        }
+
+        footer {
+            background-color: yellow;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+
+    <main>
+        <header>Header</header>
+        <section>Section</section>
+        <article>Article</article>
+        <footer>Footer</footer>
+    </main>
+</body>
+</html>

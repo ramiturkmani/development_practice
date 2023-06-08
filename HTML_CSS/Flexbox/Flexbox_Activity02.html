@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Activity 02</title>
+    <style>
+        .container , .container2 {
+            display: flex;
+            color: white;
+        }
+        .container > div {
+            border: solid 2px;
+            padding: 10px;
+            flex: 1;
+            background-color: green;
+            border-radius: 5px;
+        }
+        .container2 > div {
+            border: solid 3px green;
+            padding: 10px;
+            flex: 1;
+            background-color: lightgreen;
+            color: green;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox Activity 02</h1>
+
+    <div class="container">
+        <div>1
+            <div class="container2">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <div class="container2">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="container2">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+        </div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>

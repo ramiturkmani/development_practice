@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouts</title>
+
+    <style>
+        h1 {
+            background: lightblue;
+            /* display: inline; not recommended because we have other inline options such as span*/
+        }
+        p {
+            background: rgb(38, 114, 114);
+            /* display: inline; */
+        }
+        /* div {
+            background: lightcoral;
+        }
+        span {
+            background: lightgreen;
+        } */
+        #lorem {
+            background-color: lightgreen;
+            margin: 10px;
+            height: 50px;
+            width: 200px;
+        }
+        .control {
+            visibility: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Layouts</h1>
+
+    <p>This is a block element p</p>
+
+    <div>This is a block element div</div>
+
+    <span>This is a inline element span</span>
+
+    <a href="#">This is an inline element</a>
+
+    <img src="" alt="Some image"/>
+
+    <p id="lorem"><span>Lorem</span> ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <p class=”control”>On/Off Light </p>
+
+</body>
+</html>

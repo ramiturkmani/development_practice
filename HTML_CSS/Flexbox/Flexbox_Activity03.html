@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Activity 03</title>
+    <style>
+        .container {
+            color: white;
+            text-align: right;
+            font-size: 30px;
+        }
+
+        .container2 {
+            display: flex;     
+            font-size: 30px;       
+        }
+
+        .container > div {
+            padding: 50px 10px 10px 10px;
+            flex: 1;
+            background-color: black;
+        }
+
+        .container2 > div {
+            border: solid 1px black;
+            flex: 1;
+            background-color: darkorange;
+            color: black;
+            height: 90px;
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        #AC {
+            flex: 2;
+            background-color: red;
+        }
+
+        #equals {
+            background-color: blue;
+        }
+
+        #gray {
+            background-color: gray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox Activity 03</h1>
+
+    <div class="container">
+        <div>0
+            <div class="container2">
+                <div id="AC">AC</div>
+                <div id="gray">/</div>
+                <div id="gray">X</div>
+                
+            </div>
+            <div class="container2">
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div id="gray">-</div>
+            </div>
+            <div class="container2">
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div id="gray">+</div>
+            </div>
+            <div class="container2">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div id="equals">=</div>
+            </div>
+            <div class="container2">
+                <div>0</div>
+                <div>.</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

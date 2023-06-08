@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids Activity 02</title>
+    <style>
+        .page {
+            /* border: solid 1px; */
+            height: 100vh;
+            max-width: 600px;
+            margin: 0 auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr 4fr 1fr; */
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        nav {
+            /* border: solid 1px; */
+            text-align: center;
+            max-width: 60%;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-evenly;
+            padding-left: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(35, 155, 155);
+        }
+
+        /* SECTION */
+        section {
+            /* border: solid 1px; */
+            text-align: center;
+            max-width: 80%;
+            margin: 45px auto;
+        }
+
+        /* MAIN */
+
+        main {
+            /* border: solid 1px; */
+            display: grid;
+            /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+            /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+            grid-template-columns: repeat(2, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        /* .card {
+            border: solid 1px;
+        } */
+
+        .card img {
+            width: 100%;
+            height: auto;
+            min-height: 100px;
+        }
+        /* FOOTER */
+        footer {
+            /* border: solid 1px; */
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer span {
+            color: rgb(35, 155, 155);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>Joe Doe</h1>
+            <nav>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <p>
+                I am creating web developer, who specializes in building beautiful websites
+            </p>
+        </section>
+
+        <main>
+
+            <div class="card">
+                <img src="https://www.travelandleisure.com/thmb/I9VMFOpizyils9O_1TGqqpHXeYo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/havasu-falls-arzona-us-WATERFALLS1021-d0967cd424ea4a2abde23cb3581144dc.jpg"
+                    alt="nature" />
+                <h2>Project Title</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium provident consequatur
+                    expedita atque quis voluptatibus accusantium tempora quisquam fuga error, nesciunt dolores amet
+                    suscipit, reprehenderit exercitationem inventore iste maxime!</p>
+            </div>
+            <div class="card">
+                <img src="https://www.travelandleisure.com/thmb/I9VMFOpizyils9O_1TGqqpHXeYo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/havasu-falls-arzona-us-WATERFALLS1021-d0967cd424ea4a2abde23cb3581144dc.jpg"
+                    alt="nature" />
+                <h2>Project Title</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium provident consequatur
+                    expedita atque quis voluptatibus accusantium tempora quisquam fuga error, nesciunt dolores amet
+                    suscipit, reprehenderit exercitationem inventore iste maxime!</p>
+            </div>
+            <div class="card">
+                <img src="https://www.travelandleisure.com/thmb/I9VMFOpizyils9O_1TGqqpHXeYo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/havasu-falls-arzona-us-WATERFALLS1021-d0967cd424ea4a2abde23cb3581144dc.jpg"
+                    alt="nature" />
+                <h2>Project Title</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium provident consequatur
+                    expedita atque quis voluptatibus accusantium tempora quisquam fuga error, nesciunt dolores amet
+                    suscipit, reprehenderit exercitationem inventore iste maxime!</p>
+            </div>
+            <div class="card">
+                <img src="https://www.travelandleisure.com/thmb/I9VMFOpizyils9O_1TGqqpHXeYo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/havasu-falls-arzona-us-WATERFALLS1021-d0967cd424ea4a2abde23cb3581144dc.jpg"
+                    alt="nature" />
+                <h2>Project Title</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium provident consequatur
+                    expedita atque quis voluptatibus accusantium tempora quisquam fuga error, nesciunt dolores amet
+                    suscipit, reprehenderit exercitationem inventore iste maxime!</p>
+            </div>
+            <div class="card">
+                <img src="https://www.travelandleisure.com/thmb/I9VMFOpizyils9O_1TGqqpHXeYo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/havasu-falls-arzona-us-WATERFALLS1021-d0967cd424ea4a2abde23cb3581144dc.jpg"
+                    alt="nature" />
+                <h2>Project Title</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium provident consequatur
+                    expedita atque quis voluptatibus accusantium tempora quisquam fuga error, nesciunt dolores amet
+                    suscipit, reprehenderit exercitationem inventore iste maxime!</p>
+            </div>
+            <div class="card">
+                <img src="https://www.travelandleisure.com/thmb/I9VMFOpizyils9O_1TGqqpHXeYo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/havasu-falls-arzona-us-WATERFALLS1021-d0967cd424ea4a2abde23cb3581144dc.jpg"
+                    alt="nature" />
+                <h2>Project Title</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium provident consequatur
+                    expedita atque quis voluptatibus accusantium tempora quisquam fuga error, nesciunt dolores amet
+                    suscipit, reprehenderit exercitationem inventore iste maxime!</p>
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>Copyright 2023, Joe Doe</p>
+        </footer>
+    </div>
+</body>
+
+</html>

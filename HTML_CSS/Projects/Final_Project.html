@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rami's Scores</title>
+    <style>
+        :root {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 70px;
+        }
+
+        .header {
+            font-size: 25px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background-color:coral;
+        }
+
+        .topTeams {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .bottomTeams {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .scores {
+            display: flex;
+            flex-direction: row;
+            background-color: lightseagreen;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .images {
+            display: grid;
+            width: 100%;
+            grid-template-areas: 
+                "img img img img img"
+                "img img img img img";
+            justify-content: space-between;
+        }
+
+        img {
+            grid-area: "img";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>LIVE SCORES</h1>
+    <div class="header">
+        <div class="images">
+            <img src="https://content.sportslogos.net/logos/6/221/thumbs/hj3gmh82w9hffmeh3fjm5h874.gif" alt="Bulls"></img>
+            <img src="https://content.sportslogos.net/logos/6/236/thumbs/23637762019.gif" alt="Clippers"></img>
+            <img src="https://content.sportslogos.net/logos/6/213/thumbs/slhg02hbef3j1ov4lsnwyol5o.gif" alt="Celtics"></img>
+            <img src="https://content.sportslogos.net/logos/6/237/thumbs/uig7aiht8jnpl1szbi57zzlsh.gif" alt="Lakers"></img>
+            <img src="https://content.sportslogos.net/logos/6/214/thumbs/burm5gh2wvjti3xhei5h16k8e.gif" alt="Heat"></img>
+            <img src="https://content.sportslogos.net/logos/6/225/thumbs/22582752016.gif" alt="Bucks"></img>
+            <img src="https://content.sportslogos.net/logos/6/227/thumbs/22770242021.gif" alt="Raptors"></img>
+            <img src="https://content.sportslogos.net/logos/6/229/thumbs/22989262019.gif" alt="Nuggets"></img>
+            <img src="https://content.sportslogos.net/logos/6/224/thumbs/22448122018.gif" alt="Pacers"></img>
+            <img src="https://content.sportslogos.net/logos/6/3786/thumbs/hsuff5m3dgiv20kovde422r1f.gif" alt="Nets"></img>
+        </div>
+        <div class="topTeams">
+            <div>Bulls: 12</div>
+            <div>Clippers: 43</div>
+            <div>Celtics : 65</div>
+            <div>Lakers: 110</div>
+            <div>Heat: 101</div>
+        </div>
+        <div class="bottomTeams">
+            <div>Bucks: 20</div>
+            <div>Raptops: 32</div>
+            <div>Nuggets: 68</div>
+            <div>Pacers: 96</div>
+            <div>Nets: 122</div>
+        </div>
+        <div class="scores">
+            <div>1st 1:34</div>
+            <div>2nd 3:59</div>
+            <div>3rd 6:42</div>
+            <div>Final</div>
+            <div>Final</div>
+        </div>
+    </div>
+</body>
+</html>

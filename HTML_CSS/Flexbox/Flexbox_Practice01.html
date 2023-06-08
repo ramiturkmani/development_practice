@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Homework 01</title>
+    <style>
+        :root {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .container div {
+            display: flex;
+        }
+
+        .container>div>div {
+            display: flex;
+            border: solid 1px;
+            margin: 10px;
+            /* height: 300px; */
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .rightTop {
+            flex: 2;
+            flex-direction: column;
+            padding-left: 20px;
+        }
+
+        .rightBottom {
+            flex: 1;
+            flex-direction: column;
+        }
+
+        .image {
+            flex-direction: column;
+            padding: 20px 50px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text {
+            flex-direction: column;
+        }
+
+        .title {
+            font-size: 20px;
+            flex: 3;
+            padding-top: 10px;
+        }
+
+        .price {
+            font-size: 30px;
+            flex: 1;
+        }
+
+        .originalPrice {
+            font-size: 18px;
+            flex: 1;
+        }
+
+        .shipping {
+            color: gray;
+            flex: 3;
+        }
+
+        .stock {
+            color: red;
+            flex: 1;
+        }
+
+        .rbTop {
+            justify-content: center;
+
+        }
+
+        .rbTop>div {
+            border: solid 1px;
+        }
+
+        .rbBottom {
+            flex-direction: column;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        span {
+            color: blue;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="leftTop">
+                <div class="image">
+                    <img src="https://res.cloudinary.com/dp9dnliwc/image/upload/c_mfit,h_1200,w_1200/f_auto/q_auto/wmmedia/watch_images/large/116710blnr.jpg"
+                        alt="Rolex GMT-Master II" width="200px">
+                    <div>Authenticity Guarantee</div>
+                </div>
+                <div class="text">
+                    <div class="title">Rolex GMT-Master II Stainless Steel Black Dial Automatic Mens Watch 116710N</div>
+                    <div class="price"><strong>$11,999.00</strong></div>
+                    <div class="originalPrice"><del>$12,499.00</del> &nbsp|&nbsp <strong>4% OFF</strong></div>
+                    <div class="shipping">Free Shipping</div>
+                    <div class="stock"><strong>Almost Gone</strong></div>
+                </div>
+            </div>
+
+
+            <div class="leftMiddle">
+                <div class="image">
+                    <img src="https://www.aristorwatches.com/media/catalog/product/cache/1/image/600x800/9df78eab33525d08d6e5fb8d27136e95/a/r/aristorwatches824.jpg"
+                        alt="Stuhrling Meteorite 880" height="200px">
+                    <div>Authenticity Guarantee</div>
+                </div>
+                <div class="text">
+                    <div class="title">Stuhrling Meteorite 880 Hand-Wind Tourbillon Genuine Lizard Strap Men's</div>
+                    <div class="price"><strong>$2,350.00</strong></div>
+                    <div class="originalPrice"><del>$7,999.00</del> &nbsp|&nbsp <strong>71% OFF</strong></div>
+                    <div class="shipping">Free Shipping</div>
+                    <div class="stock"><strong>Almost Gone</strong></div>
+                </div>
+            </div>
+
+
+            <div class="leftBottom">
+                <div class="image">
+                    <img src="https://i.ebayimg.com/images/g/6N8AAOSwPORiDlTi/s-l640.jpg"
+                        alt="Concord Mariner 14k Yellow Gold" height="200px">
+                    <div>Authenticity Guarantee</div>
+                </div>
+                <div class="text">
+                    <div class="title">CONCORD MARINER 14k Yellow Gold Date This Quartz Men's Watch 77.6</div>
+                    <div class="price"><strong>$4,199.30</strong></div>
+                    <div class="originalPrice"><del>$5,999.00</del> &nbsp|&nbsp <strong>30% OFF</strong></div>
+                    <div class="shipping">Free Shipping</div>
+                    <div class="stock"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="rightTop">
+                <div class="image">
+                    <img src="https://m.media-amazon.com/images/I/71kBlSKi3eL._AC_UF1000,1000_QL80_.jpg"
+                        alt="Microsoft Surface Pro 7" width="663px">
+                </div>
+                <div class="text">
+                    <div class="title">Microsoft Surface Pro 7 12.3" Touchscreen Intel Core i5 8GB RAM 128GB SSD</div>
+                    <div class="price"><strong>$654.99</strong></div>
+                    <div class="originalPrice"><del>$899.99</del> &nbsp|&nbsp <strong>27% OFF</strong></div>
+                    <div class="shipping">Free Shipping</div>
+                </div>
+            </div>
+
+            <div class="rightBottom">
+                <div class="rbTop">
+                    <div>
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-deeppurple?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703841896"
+                            alt="Deep Purple iPhone" width="350px">
+                    </div>
+                    <div>
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-gold?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703841907"
+                            alt="Gold iPhone" width="350px">
+                    </div>
+                    <div>
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-silver?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703841892"
+                            alt="Silver iPhone" width="350px">
+                    </div>
+                    <div>
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-spaceblack?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703841897"
+                            alt="Space Black iPhone" width="350px">
+                    </div>
+                </div>
+                
+                <div class="rbBottom">
+                    <div>Show &nbsp<span>85</span>&nbsp more</div>
+                    <div>We Heart These Deals</div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRAoQuUZgjqMObr17GmLCwQ6O5FGA93NF-jg&usqp=CAU"
+                            alt="Down arrows" height="20%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
