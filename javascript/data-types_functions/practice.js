@@ -120,3 +120,37 @@ calculateDogAge(3);
 
 
 //The Lifetime Supply Calculator
+function calculateSupply(age, dailyAmount) {
+    let maxAge = 85;
+    console.log(`You will need ${(maxAge - age) * dailyAmount} to last you until the ripe old age of ${maxAge}`);
+}
+
+calculateSupply(23, 4);
+calculateSupply(41, 2);
+calculateSupply(12, 8);
+
+
+//The Geometrizer
+function calcCircumfrence(radius) {
+    console.log(`The circumfrence is ${2 * Math.PI * radius}`);
+}
+
+function calcArea(radius) {
+    console.log(`The area is ${Math.PI * Math.pow(radius, 2)}`);
+}
+
+calcCircumfrence(5);
+calcArea(5);
+
+
+//The Temperature Converter
+function celsiusToFahrenheit(tempC) {
+    console.log(`${tempC}°C is ${(tempC * (9/5)) + 32}°F`);
+}
+
+function fahrenheitToCelsius(tempF) {
+    console.log(`${tempF}°F is ${(tempF - 32) * (5/9)}°C`);
+}
+
+celsiusToFahrenheit(35);
+fahrenheitToCelsius(64);
