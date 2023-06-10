@@ -2,37 +2,43 @@ body {
     background-color: #333;
     color: #fff;
     text-align: center;
-}
-
-header {
+  }
+  header {
     margin-bottom: 15px;
-}
-
-button,
-select {
+  }
+  button,
+  select {
     min-height: 35px;
     padding: 10px;
-}
-table {
+  }
+  table {
     margin: 0 auto;
-}
-
-button:hover {
+  }
+  button:hover {
     background-color: aliceblue;
-}
-
-td {
+  }
+  
+  td {
     background: lightgray;
     height: 50px;
     width: 50px;
-}
-
-.red {
+    /* margin: 5px; */
+    border: 10px red;
+  }
+  
+  span {
+    background-color: gray;
+    padding: 10px;
+  }
+  
+  /* Colors */
+  .red {
     background-color: red;
-}
-.blue {
+  }
+  .blue {
     background-color: blue;
-}
-.orange {
+  }
+  .orange {
     background-color: orange;
-}
+  }
+  /* add more colors of choice */

@@ -1,40 +1,37 @@
-const addBtn = document.getElementById('addBtn');
-const select = document.getElementById('colors');
-const table = document.getElementById('pixelTable');
+// Elements
+const addBtn = document.getElementById("addBtn");
+const select = document.getElementById("colors");
+const table = document.getElementById("pixelTable");
 
+let chosenColor = "red";
 
-
+// Make a row
 const makeARow = () => {
-
-    const tr = document.createElement("tr");
-    for (let i = 0; i < 20; i++) {
-        const td = document.createElement("td");
-        tr.append(td);
-    }
-    table.append(tr);
-
-    // const box = document.getElementsByTagName("td");
-    // console.log(box);
-    // box.addEventListener();
+  // Create 20 td append it to tr. Append tr to table
+  const tr = document.createElement("tr");
+  for (let i = 0; i < 20; i++) {
+    const td = document.createElement("td");
+    tr.append(td);
+  }
+  table.append(tr);
 };
 
-const pickColor = (event) => {
-    console.log(event.target.value);
-    chosenColor = event.target.value;
-};
+// Pick a color
+const pickColor = (event) => (chosenColor = event.target.value);
 
+// Colorize
 const colorize = (event) => {
-    let targetElement = event.target;
-    if (targetElement.tagName !== "TD") {
-        return;
-    } else if(targetElement.className === chosenColor) {
-        targetElement.className = "";
-    } else {
-        targetElement.className = chosenColor;
-    }
+  let tagetElement = event.target;
+  if (tagetElement.tagName !== "TD") {
+    return;
+  } else if (tagetElement.className === chosenColor) {
+    tagetElement.className = "";
+  } else {
+    tagetElement.className = chosenColor;
+  }
 };
 
-
+// Event handlers
 addBtn.addEventListener("click", makeARow);
 select.addEventListener("change", pickColor);
-table.addEventListener("click", colorize);
+table.addEventListener("click", colorize); // https://javascript.info/bubbling-and-capturing
