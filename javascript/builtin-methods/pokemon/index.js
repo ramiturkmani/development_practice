@@ -211,3 +211,18 @@ for(const stat of data.stats){
 }
 
 //Challenge 12
+var statsArray = [];
+for(let i = 0; i <= data.stats.length -1; i++){
+  statsArray[i] = data.stats[i].base_stat;
+}
+console.log(statsArray); //before filter
+console.log(statsArray.filter(baseStat => baseStat > 47)); //after filter
+
+//Challenge 13
+
+const reversedArray = statsArray.reverse();
+const combinedString = reversedArray.toString();
+console.log(reversedArray);
+console.log(combinedString);
+
+//Challenge 14
