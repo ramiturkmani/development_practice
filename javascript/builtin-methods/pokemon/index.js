@@ -225,4 +225,32 @@ const combinedString = reversedArray.toString();
 console.log(reversedArray);
 console.log(combinedString);
 
+//Reversing the array back to the correct way
+statsArray.reverse();
+
 //Challenge 14
+console.log(statsArray.slice(0,2));
+
+//Challenge 15
+statsArray[0] = "Rami";
+console.log(statsArray);
+
+//Challenge 16
+Object.entries(data).forEach(([key, value]) => {
+  console.log(key, value);
+});
+
+//Challenge 17
+const avatar = document.querySelector('#pokemon-avatar');
+const pok_name = document.querySelector('#pokemon-name');
+const info = document.querySelector('#info');
+const name = data.name;
+const height = data.height;
+const weight = data.weight;
+const url = data.sprites.front_default;
+avatar.src = url;
+pok_name.innerHTML = name;
+info.innerHTML = `
+  <span> Height ${height}</span> -
+  <span> Weight ${weight}</span>
+`;
