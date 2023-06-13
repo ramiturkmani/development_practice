@@ -211,4 +211,3 @@ for(const stat of data.stats){
 }
 
 //Challenge 12
-
