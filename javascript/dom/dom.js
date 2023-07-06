@@ -90,7 +90,7 @@ for (const key of children2.keys()) {
 
 /* -------  TRAVERSE A DOM - RELATIONSHIPS ------- */
 /*
-    Any whitespace will create a #text node, from a single space to multiple spaces, returns, tabs, and so on.
+  Any whitespace will create a #text node, from a single space to multiple spaces, returns, tabs, and so on.
 */
 const img1 = document.getElementById("img1");
 // console.log(img1);

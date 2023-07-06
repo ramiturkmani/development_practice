@@ -13,7 +13,7 @@ prompt();
 var favBands = ["Beatles", "Green Day", "Owl City", "Coldplay"];
 // Arrow function
 favBands.forEach(band => console.log(band));
-favBands.push(window.prompt("What’s your favorite band?"));
+favBands.push(window.prompt("What's your favorite band?"));
 favBands.forEach(band => console.log(band));
 
 

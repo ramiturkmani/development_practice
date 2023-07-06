@@ -212,11 +212,11 @@ const arg = 10;
 
 // Callback function
 function greeting(name) {
-//   alert(`Hello, ${name}`);
+  //   alert(`Hello, ${name}`);
 }
 // Callback function
 function welcome(name) {
-//   alert(`Welcome, ${name}`);
+  //   alert(`Welcome, ${name}`);
 }
 
 function processUserInput(fn) {

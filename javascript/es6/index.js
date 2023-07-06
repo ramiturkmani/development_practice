@@ -2,8 +2,8 @@
 
 // let/const usage
 if (true) {
-    var oldImplemantation = "old way";
-    let newLet = "new way let";
+  var oldImplemantation = "old way";
+  let newLet = "new way let";
 }
 
 console.log(oldImplemantation);
@@ -57,7 +57,7 @@ console.log(data);
 
 const userName = "John";
 function reverseName(name) {
-    return name.split("").reverse().join("");
+  return name.split("").reverse().join("");
 }
 console.log(`My name is ${userName} and my name contains ${userName.length} letters. And reverse of my name is ${reverseName(userName)}`);
 
@@ -91,22 +91,22 @@ const getExamplesWithArrow = () => {
 // Destruction
 // Before...
 const obj = { firstName: 'Mark', lastName: 'Twain', age: 40 };
-console.log( `Welcome ${obj.userName} ${obj["lastName"]} ${obj.age}`);
+console.log(`Welcome ${obj.userName} ${obj["lastName"]} ${obj.age}`);
 
 
 const firstName = "John";
 // After...
 const { firstName: newFirstName, lastName, age } = obj;
-console.log( `Welcome ${newFirstName} ${lastName} ${age}`);
-console.log( `Welcome ${firstName} ${lastName} ${age}`);
+console.log(`Welcome ${newFirstName} ${lastName} ${age}`);
+console.log(`Welcome ${firstName} ${lastName} ${age}`);
 
 // -------------------------------------------------------
 
 // Default prop value
 // Requirenment: Create a function that multiplies num1 with num2. If there is no num2 given, multiply with 2.
 function multiplyWithDefaultValue(num1, num2 = 2) {
-    // num2 = (num2 === undefined ? 2 : num2);
-    return num1 * num2;
+  // num2 = (num2 === undefined ? 2 : num2);
+  return num1 * num2;
 }
 console.log(multiplyWithDefaultValue(5)); //10
 console.log(multiplyWithDefaultValue(5, 10)); //50
@@ -115,12 +115,12 @@ console.log(multiplyWithDefaultValue(5, undefined)); //10
 
 // Rest Parameter
 const multiply = (n1, n2, n3, n4) => {
-    const arr = [n1, n2, n3, n4];
-    return arr.reduce((previousValue, currentValue) => previousValue * currentValue);
+  const arr = [n1, n2, n3, n4];
+  return arr.reduce((previousValue, currentValue) => previousValue * currentValue);
 }
 
 const multiplyWithRest = (...numbers) => {
-    return numbers.reduce((previousValue, currentValue) => previousValue * currentValue);
+  return numbers.reduce((previousValue, currentValue) => previousValue * currentValue);
 }
 
 console.log(multiply(1, 2, 3, 4));
@@ -128,8 +128,8 @@ console.log(multiplyWithRest(1, 2, 3, 4, 5, 6, 7)); // Easier and user can pass 
 
 // Requirenment: Create a function that returns sum of all numbers + bonus number
 function sum(bonusNumber, ...restOfTheNumbers) {
-    restOfTheNumbers.push(bonusNumber);
-    return restOfTheNumbers.reduce((previousValue, currentValue) => previousValue + currentValue);
+  restOfTheNumbers.push(bonusNumber);
+  return restOfTheNumbers.reduce((previousValue, currentValue) => previousValue + currentValue);
 }
 console.log(sum(5, 2, 3, 4)); // 5 is bonus number, 2, 3, 4 are ...restOfTheNumbers
 
@@ -143,13 +143,13 @@ const newFavBand = ["Rammstein", ...favBands];
 console.log(newFavBand);
 
 
-const initalColors = ["white","black","gray"];
-const exoticColors = ["purple","orange", "green"];
+const initalColors = ["white", "black", "gray"];
+const exoticColors = ["purple", "orange", "green"];
 
-function join(initalColors,exoticColors){
-    return [...initalColors,...exoticColors];
+function join(initalColors, exoticColors) {
+  return [...initalColors, ...exoticColors];
 }
-console.log(join(initalColors,exoticColors));
+console.log(join(initalColors, exoticColors));
 
 
 // Activity: rest
@@ -163,7 +163,7 @@ const average = (...numbers) => {
     */
   //2nd way
   let result = 0;
-  numbers.forEach((num) => result += num/numbers.length);
+  numbers.forEach((num) => result += num / numbers.length);
   return result.toFixed(2);
 };
 console.log(average(2, 8, 5));
@@ -172,8 +172,8 @@ console.log(average(7, 1432, 12, 13, 100));
 
 // Promise: don't worry with the details, we'll learn in depth in the upcoming classes.
 const promise = new Promise((resolve, reject) => {
-    resolve();
-    // reject();
+  resolve();
+  // reject();
 })
 
 promise.then(() => console.log("Operation was successful")).catch(() => console.log("Failed!"));
