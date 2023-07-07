@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>CSS Basics</title>
 
-        <style>
-            /* 
+<head>
+    <meta charset="utf-8">
+    <title>CSS Basics</title>
+
+    <style>
+        /* 
             Specificity order: id > class > element 
             */
-            
-            @import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
 
-            body {
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+
+        body {
             font-family: 'Rubik Pixels', cursive;
-            }
+        }
 
-            #second-p {
-                color: red;
-            }
-            .second-p {
-                color: palegreen;
-            }
-           
-            p {
-                /* color: rgb(252, 130, 0); */
-                color: rgba(252, 130, 0, 1);  /* a = opacity (between 0 and 1) */ 
-            }
-            
-            body {
-                color: gray;
-            }
+        #second-p {
+            color: red;
+        }
 
-            h1 {
-                color: blue;
-            }
-            
-            #box1,
-            #box2,
-            .box3 {
-                color: green;
-            }
+        .second-p {
+            color: palegreen;
+        }
 
-        </style>
-    </head>
-    <body>
-        <h1>CSS Basics</h1>
+        p {
+            /* color: rgb(252, 130, 0); */
+            color: rgba(252, 130, 0, 1);
+            /* a = opacity (between 0 and 1) */
+        }
 
-        <p>Hello World</p>
-        <p id="second-p" class="second-p">Hello World</p>
-        <p style="color: violet">Hello World</p>
-        <p style="color: violet">Hello World</p>
-        <p style="color: violet">Hello World</p>
-        <p style="color: violet">Hello World</p>
-        <p style="color: violet">Hello World</p>
+        body {
+            color: gray;
+        }
 
-        <!--Group Selectors-->
-        <div class="box">
-            <p id="box1">Box 1</p>
-            <div id="box2">Box 2</div>
-            <span class="box3">Box 3</span>
-        </div>
+        h1 {
+            color: blue;
+        }
 
-        <h1>Units</h1>
+        #box1,
+        #box2,
+        .box3 {
+            color: green;
+        }
+    </style>
+</head>
 
-        <pre>
+<body>
+    <h1>CSS Basics</h1>
+
+    <p>Hello World</p>
+    <p id="second-p" class="second-p">Hello World</p>
+    <p style="color: violet">Hello World</p>
+    <p style="color: violet">Hello World</p>
+    <p style="color: violet">Hello World</p>
+    <p style="color: violet">Hello World</p>
+    <p style="color: violet">Hello World</p>
+
+    <!--Group Selectors-->
+    <div class="box">
+        <p id="box1">Box 1</p>
+        <div id="box2">Box 2</div>
+        <span class="box3">Box 3</span>
+    </div>
+
+    <h1>Units</h1>
+
+    <pre>
             px
             em
             rem
             percentage
         </pre>
-        
-    </body>
+
+</body>
+
 </html>
