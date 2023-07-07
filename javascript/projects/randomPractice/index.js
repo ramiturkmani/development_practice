@@ -19,4 +19,4 @@ function typeFreq(arr) {
     console.log(result);
 }
 
-typeFreq([1,4,'asd', false]);
+typeFreq([1, 4, 'asd', false]);

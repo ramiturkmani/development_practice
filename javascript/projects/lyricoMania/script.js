@@ -19,13 +19,13 @@ const showData = (resData) => {
    <div style="color: darkgreen" >Total songs: ${total}</div>
     <ul class="songs">
       ${data
-        .map(
-          (song) => `<li>
+      .map(
+        (song) => `<li>
             <span><strong>${song.artist.name}</strong> - ${song.title}</span>
             <button class="btn" data-artist="${song.artist.name}" data-songtitle="${song.title}">Get Lyrics</button>
             </li>`
-        )
-        .join("")}
+      )
+      .join("")}
     </ul>
     <p>Next 15 songs</p>
   `;
